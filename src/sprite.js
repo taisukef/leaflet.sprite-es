@@ -1,4 +1,4 @@
-const path = "https://taisukef.github.io/leaflet.sprite-es/";
+const path = "https://taisukef.github.io/leaflet.sprite-es/src/";
 
 const css = (string) => {
   const tag = document.createElement('style');
@@ -8,8 +8,8 @@ const css = (string) => {
 
 const init = (L) => {
   const sources = {
-    blank: path + "src/blank.png",
-    sprite: path + "src/sprite.png",
+    blank: path + "blank.png",
+    sprite: path + "sprite.png",
   };
   
   L.spriteIcon = (color) => {
@@ -20,7 +20,7 @@ const init = (L) => {
       shadowsize: [41, 41],
       iconAnchor: [12, 41],
       iconUrl: sources.blank,
-      shadowUrl: L.Icon.Default.imagePath + "/marker-shadow.png"
+      shadowUrl: path + "marker-shadow.png"
     });
   };
   
