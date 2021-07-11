@@ -36,4 +36,7 @@ const init = (L) => {
   }
 };
 
-export { init };
+const colors = ["blue", "green", "orange", "yellow", "red", "purple", "violet"];
+
+const LeafletSprite = { init, colors };
+export { LeafletSprite };
