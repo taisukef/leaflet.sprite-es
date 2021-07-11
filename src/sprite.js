@@ -19,7 +19,7 @@ const init = (L) => {
       iconSize: [24, 41],
       shadowsize: [41, 41],
       iconAnchor: [12, 41],
-      popupAnchor: [0, -32],
+      popupAnchor: [0, -34],
       iconUrl: sources.blank,
       shadowUrl: path + "marker-shadow.png"
     });
